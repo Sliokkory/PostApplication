@@ -1,17 +1,15 @@
 <template>
   <form @submit.prevent>
     <h4>Создание поста</h4>
-    <my-input v-model="post.title" class="input" type="text" placeholder="Название"/>
+    <my-input v-focus v-model="post.title" class="input" type="text" placeholder="Название"/>
     <my-input v-model="post.body" class="input" type="text" placeholder="Описание"/>
     <my-button @click="createPost" class="btn">Создать</my-button>
   </form>
 </template>
 
 <script>
-import MyInput from "@/components/UI/MyInput";
 
 export default {
-  components: {MyInput},
   data() {
     return {
       post: {
