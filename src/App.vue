@@ -1,32 +1,13 @@
 <template>
+  <my-navbar></my-navbar>
   <div class="app">
-    <post-form @create="createPost"/>
-    <post-list :posts="posts"/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import PostForm from "@/components/PostForm";
-import PostList from "@/components/PostList";
 
 export default {
-  components: {
-    PostList, PostForm
-  },
-  data() {
-    return {
-      posts: [
-        {id: 1, title: "JavaScript", body: "Описание поста"},
-        {id: 2, title: "JavaScript 2", body: "Описание поста 2"},
-        {id: 3, title: "JavaScript 3", body: "Описание поста 3"},
-      ],
-    }
-  },
-  methods: {
-    createPost(post) {
-      this.posts.push(post);
-    },
-  }
 }
 </script>
 
@@ -39,5 +20,28 @@ export default {
 
 .app {
   padding: 20px;
+}
+
+.app__btns {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__wrapper {
+  display: flex;
+  margin-top: 15px;
+}
+
+.page {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.current__page {
+  border: 2px solid teal;
+}
+.observed {
+
 }
 </style>
