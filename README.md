@@ -19,6 +19,7 @@ yarn build
 ```
 Posts:
 
+![Posts](https://user-images.githubusercontent.com/50696983/124499773-3efe0f80-ddc7-11eb-968a-911276130640.png)
 <img width="700" alt="Posts" src="https://user-images.githubusercontent.com/50696983/124499773-3efe0f80-ddc7-11eb-968a-911276130640.png">
 ```
 ```
